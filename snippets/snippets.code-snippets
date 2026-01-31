@@ -1,14 +1,14 @@
 {
-  "CTkButton from the customtkinter module": {
+  "CTkButton from the customtkinter module with place placement": {
     "prefix": "ctkbutton",
     "body": [
       "def button_event():",
       "    print('button pressed')",
       "",
-      "${1:button} = customtkinter.CTkButton(${2:app}, text='CTkButton', width=140, height=28)"
+      "${1:button} = customtkinter.CTkButton(${2:app}, text='CTkButton', width=140, height=28)",
       "${1:button}.place(x=10, y=10)"
     ],
-    "description": "Inserts a button widget snippet"
+    "description": "Button widget with place geometry"
   },
   "CTkButton from the customtkinter module with grid placement": {
     "prefix": "ctkbutton.grid",
@@ -16,10 +16,10 @@
       "def button_event():",
       "    print('button pressed')",
       "",
-      "${1:button} = customtkinter.CTkButton(${2:app}, text='CTkButton', width=140, height=28)"
+      "${1:button} = customtkinter.CTkButton(${2:app}, text='CTkButton', width=140, height=28)",
       "${1:button}.grid(column=0, row=0)"
     ],
-    "description": "Inserts a button widget snippet"
+    "description": "Button widget with grid layout"
   },
   "CTkButton from the customtkinter module with pack placement": {
     "prefix": "ctkbutton.pack",
@@ -27,12 +27,12 @@
       "def button_event():",
       "    print('button pressed')",
       "",
-      "${1:button} = customtkinter.CTkButton(${2:app}, text='CTkButton', width=140, height=28)"
+      "${1:button} = customtkinter.CTkButton(${2:app}, text='CTkButton', width=140, height=28)",
       "${1:button}.pack()"
     ],
-    "description": "Inserts a button widget snippet"
+    "description": "Button widget with pack layout"
   },
-  "CTkCheckBox from the customtkinter module": {
+  "CTkCheckBox from the customtkinter module with place placement": {
     "prefix": "ctkcheckbox",
     "body": [
       "def checkbox_event():",
@@ -41,12 +41,11 @@
       "check_var = customtkinter.StringVar(value='on')",
       "${1:checkbox} = customtkinter.CTkCheckBox(${2:app}, text='CTkCheckBox', command=checkbox_event,",
       "                                     width=100, height=24, checkbox_width=24, checkbox_height=24,",
-      "                                     variable=check_var, onvalue='on', offvalue='off')"
+      "                                     variable=check_var, onvalue='on', offvalue='off')",
       "${1:checkbox}.place(x=10, y=10)"
     ],
-    "description": "Inserts a checkbox widget snippet"
+    "description": "Checkbox widget with place geometry"
   },
-  
   "CTkCheckBox from the customtkinter module with grid placement": {
     "prefix": "ctkcheckbox.grid",
     "body": [
@@ -56,12 +55,11 @@
       "check_var = customtkinter.StringVar(value='on')",
       "${1:checkbox} = customtkinter.CTkCheckBox(${2:app}, text='CTkCheckBox', command=checkbox_event,",
       "                                     width=100, height=24, checkbox_width=24, checkbox_height=24,",
-      "                                     variable=check_var, onvalue='on', offvalue='off')"
+      "                                     variable=check_var, onvalue='on', offvalue='off')",
       "${1:checkbox}.grid(column=0, row=0)"
     ],
-    "description": "Inserts a checkbox widget snippet"
+    "description": "Checkbox widget with grid layout"
   },
-  
   "CTkCheckBox from the customtkinter module with pack placement": {
     "prefix": "ctkcheckbox.pack",
     "body": [
@@ -71,12 +69,12 @@
       "check_var = customtkinter.StringVar(value='on')",
       "${1:checkbox} = customtkinter.CTkCheckBox(${2:app}, text='CTkCheckBox', command=checkbox_event,",
       "                                     width=100, height=24, checkbox_width=24, checkbox_height=24,",
-      "                                     variable=check_var, onvalue='on', offvalue='off')"
+      "                                     variable=check_var, onvalue='on', offvalue='off')",
       "${1:checkbox}.pack()"
     ],
-    "description": "Inserts a checkbox widget snippet"
+    "description": "Checkbox widget with pack layout"
   },
-  "CTkComboBox from the customtkinter module": {
+  "CTkComboBox from the customtkinter module with place placement": {
     "prefix": "ctkcombobox",
     "body": [
       "def combobox_callback(choice):",
@@ -89,7 +87,7 @@
       "combobox_var.set('option 2')",
       "${1:combobox}.place(x=10, y=10)"
     ],
-    "description": "Inserts a combo box widget snippet"
+    "description": "ComboBox widget with place geometry"
   },
   "CTkComboBox from the customtkinter module with grid placement": {
     "prefix": "ctkcombobox.grid",
@@ -104,7 +102,7 @@
       "combobox_var.set('option 2')",
       "${1:combobox}.grid(column=0, row=0)"
     ],
-    "description": "Inserts a combo box widget snippet"
+    "description": "ComboBox widget with grid layout"
   },
   "CTkComboBox from the customtkinter module with pack placement": {
     "prefix": "ctkcombobox.pack",
@@ -119,15 +117,15 @@
       "combobox_var.set('option 2')",
       "${1:combobox}.pack()"
     ],
-    "description": "Inserts a combo box widget snippet"
+    "description": "ComboBox widget with pack layout"
   },
-  "CTkEntry from the customtkinter module": {
+  "CTkEntry from the customtkinter module with place placement": {
     "prefix": "ctkentry",
     "body": [
       "${1:entry} = customtkinter.CTkEntry(${2:app}, placeholder_text='CTkEntry', width=140, height=28)",
       "${1:entry}.place(x=10, y=10)"
     ],
-    "description": "Inserts an entry field widget snippet"
+    "description": "Entry widget with place geometry"
   },
   "CTkEntry from the customtkinter module with grid placement": {
     "prefix": "ctkentry.grid",
@@ -135,7 +133,7 @@
       "${1:entry} = customtkinter.CTkEntry(${2:app}, placeholder_text='CTkEntry', width=140, height=28)",
       "${1:entry}.grid(column=0, row=0)"
     ],
-    "description": "Inserts an entry field widget snippet"
+    "description": "Entry widget with grid layout"
   },
   "CTkEntry from the customtkinter module with pack placement": {
     "prefix": "ctkentry.pack",
@@ -143,15 +141,15 @@
       "${1:entry} = customtkinter.CTkEntry(${2:app}, placeholder_text='CTkEntry', width=140, height=28)",
       "${1:entry}.pack()"
     ],
-    "description": "Inserts an entry field widget snippet"
+    "description": "Entry widget with pack layout"
   },
-  "CTkFrame from the customtkinter module": {
+  "CTkFrame from the customtkinter module with place placement": {
     "prefix": "ctkframe",
     "body": [
       "${1:frame} = customtkinter.CTkFrame(${2:app}, width=200, height=200)",
       "${1:frame}.place(x=10, y=10)"
     ],
-    "description": "Inserts a frame widget snippet"
+    "description": "Frame widget with place geometry"
   },
   "CTkFrame from the customtkinter module with grid placement": {
     "prefix": "ctkframe.grid",
@@ -159,7 +157,7 @@
       "${1:frame} = customtkinter.CTkFrame(${2:app}, width=200, height=200)",
       "${1:frame}.grid(column=0, row=0)"
     ],
-    "description": "Inserts a frame widget snippet"
+    "description": "Frame widget with grid layout"
   },
   "CTkFrame from the customtkinter module with pack placement": {
     "prefix": "ctkframe.pack",
@@ -167,23 +165,23 @@
       "${1:frame} = customtkinter.CTkFrame(${2:app}, width=200, height=200)",
       "${1:frame}.pack()"
     ],
-    "description": "Inserts a frame widget snippet"
+    "description": "Frame widget with pack layout"
   },
-  "CTkLabel from the customtkinter module": {
+  "CTkLabel from the customtkinter module with place placement": {
     "prefix": "ctklabel",
     "body": [
       "${1:label} = customtkinter.CTkLabel(${2:app}, text='CTkLabel', width=40, height=28, fg_color='transparent')",
       "${1:label}.place(x=10, y=10)"
     ],
-    "description": "Inserts a label widget snippet"
+    "description": "Label widget with place geometry"
   },
   "CTkLabel from the customtkinter module with grid placement": {
     "prefix": "ctklabel.grid",
     "body": [
       "${1:label} = customtkinter.CTkLabel(${2:app}, text='CTkLabel', width=40, height=28, fg_color='transparent')",
-      "${1:label}.grid(column=0 ,row=0)"
+      "${1:label}.grid(column=0, row=0)"
     ],
-    "description": "Inserts a label widget snippet"
+    "description": "Label widget with grid layout"
   },
   "CTkLabel from the customtkinter module with pack placement": {
     "prefix": "ctklabel.pack",
@@ -191,9 +189,9 @@
       "${1:label} = customtkinter.CTkLabel(${2:app}, text='CTkLabel', width=40, height=28, fg_color='transparent')",
       "${1:label}.pack()"
     ],
-    "description": "Inserts a label widget snippet"
+    "description": "Label widget with pack layout"
   },
-  "CTkOptionMenu from the customtkinter module": {
+  "CTkOptionMenu from the customtkinter module with place placement": {
     "prefix": "ctkoptionmenu",
     "body": [
       "def optionmenu_callback(choice):",
@@ -206,7 +204,7 @@
       "                                         variable=optionmenu_var)",
       "${1:optionmenu}.place(x=10, y=10)"
     ],
-    "description": "Inserts an option menu widget snippet"
+    "description": "OptionMenu widget with place geometry"
   },
   "CTkOptionMenu from the customtkinter module with grid placement": {
     "prefix": "ctkoptionmenu.grid",
@@ -221,7 +219,7 @@
       "                                         variable=optionmenu_var)",
       "${1:optionmenu}.grid(column=0, row=0)"
     ],
-    "description": "Inserts an option menu widget snippet"
+    "description": "OptionMenu widget with grid layout"
   },
   "CTkOptionMenu from the customtkinter module with pack placement": {
     "prefix": "ctkoptionmenu.pack",
@@ -236,15 +234,15 @@
       "                                         variable=optionmenu_var)",
       "${1:optionmenu}.pack()"
     ],
-    "description": "Inserts an option menu widget snippet"
+    "description": "OptionMenu widget with pack layout"
   },
-  "CTkProgressBar from the customtkinter module": {
+  "CTkProgressBar from the customtkinter module with place placement": {
     "prefix": "ctkprogressbar",
     "body": [
       "${1:progressbar} = customtkinter.CTkProgressBar(${2:app}, orientation='horizontal')",
       "${1:progressbar}.place(x=10, y=10)"
     ],
-    "description": "Inserts a progress bar widget snippet"
+    "description": "ProgressBar widget with place geometry"
   },
   "CTkProgressBar from the customtkinter module with grid placement": {
     "prefix": "ctkprogressbar.grid",
@@ -252,7 +250,7 @@
       "${1:progressbar} = customtkinter.CTkProgressBar(${2:app}, orientation='horizontal')",
       "${1:progressbar}.grid(column=0, row=0)"
     ],
-    "description": "Inserts a progress bar widget snippet"
+    "description": "ProgressBar widget with grid layout"
   },
   "CTkProgressBar from the customtkinter module with pack placement": {
     "prefix": "ctkprogressbar.pack",
@@ -260,9 +258,9 @@
       "${1:progressbar} = customtkinter.CTkProgressBar(${2:app}, orientation='horizontal')",
       "${1:progressbar}.pack()"
     ],
-    "description": "Inserts a progress bar widget snippet"
+    "description": "ProgressBar widget with pack layout"
   },
-  "CTkRadioButton from the customtkinter module": {
+  "CTkRadioButton from the customtkinter module with place placement": {
     "prefix": "ctkradiobutton",
     "body": [
       "def radiobutton_event():",
@@ -275,7 +273,7 @@
       "",
       "${1:radiobutton}.place(x=10, y=10)"
     ],
-    "description": "Inserts a radio button widget snippet"
+    "description": "RadioButton widget with place geometry"
   },
   "CTkRadioButton from the customtkinter module with grid placement": {
     "prefix": "ctkradiobutton.grid",
@@ -290,7 +288,7 @@
       "",
       "${1:radiobutton}.grid(column=0, row=0)"
     ],
-    "description": "Inserts a radio button widget snippet"
+    "description": "RadioButton widget with grid layout"
   },
   "CTkRadioButton from the customtkinter module with pack placement": {
     "prefix": "ctkradiobutton.pack",
@@ -305,16 +303,16 @@
       "",
       "${1:radiobutton}.pack()"
     ],
-    "description": "Inserts a radio button widget snippet"
+    "description": "RadioButton widget with pack layout"
   },
-  "CTkScrollableFrame from the customtkinter module": {
+  "CTkScrollableFrame from the customtkinter module with place placement": {
     "prefix": "ctkscrollableframe",
     "body": [
       "${1:scrollable_frame} = customtkinter.CTkScrollableFrame(${2:app}, width=200, height=200)",
       "",
       "${1:scrollable_frame}.place(x=10, y=10)"
     ],
-    "description": "Inserts a scrollable frame widget snippet"
+    "description": "ScrollableFrame widget with place geometry"
   },
   "CTkScrollableFrame from the customtkinter module with grid placement": {
     "prefix": "ctkscrollableframe.grid",
@@ -323,7 +321,7 @@
       "",
       "${1:scrollable_frame}.grid(column=0, row=0)"
     ],
-    "description": "Inserts a scrollable frame widget snippet"
+    "description": "ScrollableFrame widget with grid layout"
   },
   "CTkScrollableFrame from the customtkinter module with pack placement": {
     "prefix": "ctkscrollableframe.pack",
@@ -332,9 +330,9 @@
       "",
       "${1:scrollable_frame}.pack()"
     ],
-    "description": "Inserts a scrollable frame widget snippet"
+    "description": "ScrollableFrame widget with pack layout"
   },
-  "CTkSegmentedButton from the customtkinter module": {
+  "CTkSegmentedButton from the customtkinter module with place placement": {
     "prefix": "ctksegmentedbutton",
     "body": [
       "def segmented_button_callback(value):",
@@ -348,7 +346,7 @@
       "",
       "${1:segmented_button}.place(x=10, y=10)"
     ],
-    "description": "Inserts a segmented button widget snippet"
+    "description": "SegmentedButton widget with place geometry"
   },
   "CTkSegmentedButton from the customtkinter module with grid placement": {
     "prefix": "ctksegmentedbutton.grid",
@@ -364,7 +362,7 @@
       "",
       "${1:segmented_button}.grid(column=0, row=0)"
     ],
-    "description": "Inserts a segmented button widget snippet"
+    "description": "SegmentedButton widget with grid layout"
   },
   "CTkSegmentedButton from the customtkinter module with pack placement": {
     "prefix": "ctksegmentedbutton.pack",
@@ -380,9 +378,9 @@
       "",
       "${1:segmented_button}.pack()"
     ],
-    "description": "Inserts a segmented button widget snippet"
+    "description": "SegmentedButton widget with pack layout"
   },
-  "CTkSlider from the customtkinter module": {
+  "CTkSlider from the customtkinter module with place placement": {
     "prefix": "ctkslider",
     "body": [
       "def slider_event(value):",
@@ -392,7 +390,7 @@
       "",
       "${1:slider}.place(x=10, y=10)"
     ],
-    "description": "Inserts a slider widget snippet"
+    "description": "Slider widget with place geometry"
   },
   "CTkSlider from the customtkinter module with grid placement": {
     "prefix": "ctkslider.grid",
@@ -404,7 +402,7 @@
       "",
       "${1:slider}.grid(column=0, row=0)"
     ],
-    "description": "Inserts a slider widget snippet"
+    "description": "Slider widget with grid layout"
   },
   "CTkSlider from the customtkinter module with pack placement": {
     "prefix": "ctkslider.pack",
@@ -416,9 +414,9 @@
       "",
       "${1:slider}.pack()"
     ],
-    "description": "Inserts a slider widget snippet"
+    "description": "Slider widget with pack layout"
   },
-  "CTkSwitch from the customtkinter module": {
+  "CTkSwitch from the customtkinter module with place placement": {
     "prefix": "ctkswitch",
     "body": [
       "def switch_event():",
@@ -431,9 +429,9 @@
       "",
       "${1:switch}.place(x=10, y=10)"
     ],
-    "description": "Inserts a switch widget snippet"
+    "description": "Switch widget with place geometry"
   },
-  "CTkSwitch from the customtkinter module  with grid placement": {
+  "CTkSwitch from the customtkinter module with grid placement": {
     "prefix": "ctkswitch.grid",
     "body": [
       "def switch_event():",
@@ -446,7 +444,7 @@
       "",
       "${1:switch}.grid(column=0, row=0)"
     ],
-    "description": "Inserts a switch widget snippet"
+    "description": "Switch widget with grid layout"
   },
   "CTkSwitch from the customtkinter module with pack placement": {
     "prefix": "ctkswitch.pack",
@@ -461,9 +459,9 @@
       "",
       "${1:switch}.pack()"
     ],
-    "description": "Inserts a switch widget snippet"
+    "description": "Switch widget with pack layout"
   },
-  "CTkTabview from the customtkinter module": {
+  "CTkTabview from the customtkinter module with place placement": {
     "prefix": "ctktabview",
     "body": [
       "${1:tabview} = customtkinter.CTkTabview(${3:app})",
@@ -476,7 +474,7 @@
       "${2:button} = customtkinter.CTkButton(master=${1:tabview}.tab('tab 1'))",
       "${2:button}.place(x=10, y=10)"
     ],
-    "description": "Inserts a tab view widget snippet"
+    "description": "TabView widget with place geometry"
   },
   "CTkTabview from the customtkinter module with grid placement": {
     "prefix": "ctktabview.grid",
@@ -491,7 +489,7 @@
       "${2:button} = customtkinter.CTkButton(master=${1:tabview}.tab('tab 1'))",
       "${2:button}.grid(column=0, row=1)"
     ],
-    "description": "Inserts a tab view widget snippet"
+    "description": "TabView widget with grid layout"
   },
   "CTkTabview from the customtkinter module with pack placement": {
     "prefix": "ctktabview.pack",
@@ -506,9 +504,9 @@
       "${2:button} = customtkinter.CTkButton(master=${1:tabview}.tab('tab 1'))",
       "${2:button}.pack(padx=20, pady=20)"
     ],
-    "description": "Inserts a tab view widget snippet"
+    "description": "TabView widget with pack layout"
   },
-  "CTkTextbox from the customtkinter module": {
+  "CTkTextbox from the customtkinter module with place placement": {
     "prefix": "ctktextbox",
     "body": [
       "${1:textbox} = customtkinter.CTkTextbox(${2:app}, width=200, height=200)",
@@ -520,7 +518,7 @@
       "${1:textbox}.delete('0.0', 'end')  # delete all text",
       "${1:textbox}.configure(state='disabled')  # configure textbox to be read-only"
     ],
-    "description": "Inserts a textbox widget snippet"
+    "description": "Textbox widget with place geometry"
   },
   "CTkTextbox from the customtkinter module with grid placement": {
     "prefix": "ctktextbox.grid",
@@ -534,7 +532,7 @@
       "${1:textbox}.delete('0.0', 'end')  # delete all text",
       "${1:textbox}.configure(state='disabled')  # configure textbox to be read-only"
     ],
-    "description": "Inserts a textbox widget snippet"
+    "description": "Textbox widget with grid layout"
   },
   "CTkTextbox from the customtkinter module with pack placement": {
     "prefix": "ctktextbox.pack",
@@ -550,7 +548,7 @@
     ],
     "description": "Inserts a textbox widget snippet"
   },
-  "CTkScrollbar from the customtkinter module": {
+  "CTkScrollbar from the customtkinter module with place placement": {
     "prefix": "ctkscrollbar",
     "body": [
       "${2:tk_textbox} = customtkinter.CTkTextbox(${3:app}, activate_scrollbars=False)",
@@ -563,7 +561,7 @@
       "# connect textbox scroll event to CTk scrollbar",
       "${2:tk_textbox}.configure(yscrollcommand=${1:ctk_textbox_scrollbar}.set)"
     ],
-    "description": "Inserts a scrollbar widget snippet"
+    "description": "Scrollbar widget with place geometry"
   },
   "CTkScrollbar from the customtkinter module with grid placement": {
     "prefix": "ctkscrollbar.grid",
@@ -578,7 +576,7 @@
       "# connect textbox scroll event to CTk scrollbar",
       "${2:tk_textbox}.configure(yscrollcommand=${1:ctk_textbox_scrollbar}.set)"
     ],
-    "description": "Inserts a scrollbar widget snippet"
+    "description": "Scrollbar widget with grid layout"
   },
   "CTkScrollbar from the customtkinter module with pack placement": {
     "prefix": "ctkscrollbar.pack",
@@ -608,7 +606,7 @@
       "",
       "${1:app}.mainloop()"
     ],
-    "description": "Creates a base CustomTkinter window"
+    "description": "CTk main window with geometry and title"
   },
   "CTkImage from the customtkinter module": {
     "prefix": "ctkimage",
@@ -618,21 +616,21 @@
       "                                  dark_image=Image.open('<path to dark mode image>'),",
       "                                  size=(30, 30))"
     ],
-    "description": "Image"
+    "description": "CTkImage for light and dark modes"
   },
   "CTkFont from the customtkinter module": {
     "prefix": "ctkfont",
     "body": [
       "${1:my_font} = customtkinter.CTkFont(family='<family name>', size=<size in px>)"
     ],
-    "description": "Font"
+    "description": "CTkFont custom font"
   },
   "CTkToplevel from the customtkinter module": {
     "prefix": "ctktoplevel",
-    "body": ["${1:toplevel} = customtkinter.CTkToplevel(${2:app}, width=200 ,height=200)  # master argument is optional  "],
-    "description": "Inserts a top-level window widget snippet"
+    "body": ["${1:toplevel} = customtkinter.CTkToplevel(${2:app}, width=200, height=200)  # master argument is optional"],
+    "description": "TopLevel window widget"
   },
-  "CTkInputDialog from the customtkinter module": {
+  "CTkInputDialog from the customtkinter module with place placement": {
     "prefix": "ctkinputdialog",
     "body": [
       "${1:dialog} = customtkinter.CTkInputDialog(text='Type in a number:', title='Test')",
@@ -640,7 +638,7 @@
       "",
       "${1:dialog}.place(x=10, y=10)"
     ],
-    "description": "Inserts an input dialog widget snippet"
+    "description": "InputDialog widget with place geometry"
   },
   "CTkInputDialog from the customtkinter module with grid placement": {
     "prefix": "ctkinputdialog.grid",
@@ -650,7 +648,7 @@
       "",
       "${1:dialog}.grid(column=0, row=0)"
     ],
-    "description": "Inserts an input dialog widget snippet"
+    "description": "InputDialog widget with grid layout"
   },
   "CTkInputDialog from the customtkinter module with pack placement": {
     "prefix": "ctkinputdialog.pack",
@@ -660,9 +658,9 @@
       "",
       "${1:dialog}.pack()"
     ],
-    "description": "Inserts an input dialog widget snippet"
+    "description": "InputDialog widget with pack layout"
   },
-  "TkinterVideo from the tkVideoPlayer module":{
+  "TkinterVideo from the tkVideoPlayer module with place placement":{
     "prefix": "ctkvideo",
     "body": [
       "# add `from tkVideoPlayer import TkinterVideo` on top of code  ",
@@ -675,9 +673,10 @@
       "",
       "${2:button} = customtkinter.CTkButton(${3:app}, text='Play', command=button_function)",
       "${2:button}.place(x=10, y=10)"
-    ]
+    ],
+    "description": "TkinterVideo player with place geometry"
   },
-  "TkinterVideo from the tkVideoPlayer module with grid placement":{
+  "TkinterVideo from the tkVideoPlayer module with grid placement": {
     "prefix": "ctkvideo.grid",
     "body": [
       "# add `from tkVideoPlayer import TkinterVideo` on top of code  ",
@@ -690,9 +689,10 @@
       "",
       "${2:button} = customtkinter.CTkButton(${3:app}, text='Play', command=button_function)",
       "${2:button}.grid(column=0, row=0)"
-    ]
+    ],
+    "description": "TkinterVideo player with grid layout"
   },
-  "TkinterVideo from the tkVideoPlayer module with pack placement":{
+  "TkinterVideo from the tkVideoPlayer module with pack placement": {
     "prefix": "ctkvideo.pack",
     "body": [
       "# add `from tkVideoPlayer import TkinterVideo` on top of code  ",
@@ -705,58 +705,59 @@
       "",
       "${2:button} = customtkinter.CTkButton(${3:app}, text='Play', command=button_function)",
       "${2:button}.pack()"
-    ]
+    ],
+    "description": "TkinterVideo player with pack layout"
   },
   "Appearance Mode from the customtkinter module": {
     "prefix": "appsys",
     "body": ["customtkinter.set_appearance_mode('system')"],
-    "description": "Copy systems appearance"
+    "description": "Set appearance mode to system"
   },
   "Appearance Mode Dark from the customtkinter module": {
     "prefix": "appdark",
     "body": ["customtkinter.set_appearance_mode('dark')"],
-    "description": "Sets appearance to be dark"
+    "description": "Set appearance mode to dark"
   },
   "Appearance Mode Light from the customtkinter module": {
     "prefix": "applight",
     "body": ["customtkinter.set_appearance_mode('light')"],
-    "description": "Sets appearance mode to be light"
+    "description": "Set appearance mode to light"
   },
   "Theme Green from the customtkinter module": {
     "prefix": "themegreen",
     "body": ["customtkinter.set_default_color_theme('green')"],
-    "description": "Sets the theme of the app to be green"
+    "description": "Set color theme to green"
   },
   "Theme Blue from the customtkinter module": {
     "prefix": "themeblue",
     "body": ["customtkinter.set_default_color_theme('blue')"],
-    "description": "Sets the theme of the app to be blue"
+    "description": "Set color theme to blue"
   },
   "Theme Dark Blue from the customtkinter module": {
     "prefix": "themedarkblue",
     "body": ["customtkinter.set_default_color_theme('dark-blue')"],
-    "description": "Sets the theme of the app to be dark-blue"
+    "description": "Set color theme to dark-blue"
   },
   "Theme Custom from the customtkinter module": {
     "prefix": "theme",
     "body": [
       "customtkinter.set_default_color_theme('${1:path/to/your/custom_theme.json}')"
     ],
-    "description": "Sets custom theme for the app"
+    "description": "Set custom color theme from JSON file"
   },
   "Scaling Widget from the customtkinter module": {
     "prefix": "scalingwidget",
     "body": ["customtkinter.set_widget_scaling(${1})"],
-    "description": "Sets the scale of the widgets with-in the app"
+    "description": "Set scaling factor for widgets"
   },
   "Scaling Window from the customtkinter module": {
     "prefix": "scalingwindow",
     "body": ["customtkinter.set_window_scaling(${1})"],
-    "description": "Sets the scale of the apps window"
+    "description": "Set scaling factor for window"
   },
   "Deactivate DPI from the customtkinter module": {
     "prefix": "dpideactivate",
     "body": ["customtkinter.deactivate_automatic_dpi_awareness()"],
-    "description": "Deactivates automatic scaling"
+    "description": "Deactivate automatic DPI scaling"
   }
 }
